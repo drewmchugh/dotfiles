@@ -103,10 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(dd-gitsign load-key)"
+# eval "$(dd-gitsign load-key)"
 # BEGIN ANSIBLE MANAGED BLOCK
 # Load homebrew shell variables
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Force certain more-secure behaviours from homebrew
 export HOMEBREW_NO_INSECURE_REDIRECT=1
@@ -115,10 +115,10 @@ export HOMEBREW_DIR=/opt/homebrew
 export HOMEBREW_BIN=/opt/homebrew/bin
 
 # Load python shims
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 # Load ruby shims
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # Prefer GNU binaries to Macintosh binaries.
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
@@ -158,4 +158,4 @@ export GOPRIVATE=github.com/DataDog
 export GOPROXY=binaries.ddbuild.io,https://proxy.golang.org,direct
 export GONOSUMDB=github.com/DataDog,go.ddbuild.io
 # END ANSIBLE MANAGED BLOCK
-export GITLAB_TOKEN=$(security find-generic-password -a ${USER} -s gitlab_token -w)
+# export GITLAB_TOKEN=$(security find-generic-password -a ${USER} -s gitlab_token -w)
